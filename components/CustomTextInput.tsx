@@ -10,7 +10,7 @@ export default function CustomTextInput({ label, name, ...props }: CustomTextInp
   const {
     field: { onChange, onBlur, value },
     fieldState: { error },
-  } = useController({ name, rules: { required: 'Required' } });
+  } = useController({ name });
 
   return (
     <View className="gap-1">
